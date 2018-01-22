@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #column1 {
+      float: left;
+      width: 30%;
+    }
+
+    #column2 {
+      float: right;
+      width: 70%;
+    }
+
+    #lorem {
+      visibility: hidden;
+    }
+
+    #bottle {
+      visibility: hidden;
+    }
+
+    #last {
+      visibility: hidden;
+    }
+
+    a {
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+      background-color: transparent;
+    }
+
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>HW02 Task Three</h1>
+  <h2>Credit to wikipedia for articles on 99 beer bottles and lorem ipsum</h2>
+
+  <div id="column1">
+    <a onclick="loremFunction()">
+      Lorem Ipsum
+    </a>
+    <br />
+    <a onclick="bottleFunction()">
+      99 Bottles
+    </a>
+    <br />
+    <a onclick="lastFunction()">
+      Last Thing
+    </a>
+  </div>
+
+  <div id="column2">
+    <p id="lorem">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p id="bottle">
+      99 bottles of beer on the wall, 99 bottles of beer. Take one down, pass it around, 98 bottles of beer on the wall... 98 bottles of beer on the wall, 98 bottles of beer. Take one down, pass it around, 97 bottles of beer on the wall... 97 bottles of beer
+      on the wall, 97 bottles of beer. Take one down, pass it around, 96 bottles of beer on the wall... 96 bottles of beer on the wall, 96 bottles of beer. Take one down, pass it around, 95 bottles of beer on the wall...
+    </p>
+    <p id="last">
+      this is the third thing
+    </p>
+  </div>
+
+  <script>
+    function loremFunction() {
+      document.getElementById("lorem").style.visibility = "visible";
+    }
+
+    function bottleFunction() {
+      document.getElementById("bottle").style.visibility = "visible";
+    }
+
+    function lastFunction() {
+      document.getElementById("last").style.visibility = "visible";
+    }
+  </script>
+
+</body>
+
+</html>

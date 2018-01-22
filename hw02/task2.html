@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1 id="number">10</h1>
+  <button type="button" onclick="alertValue()">Current Value</button>
+  <button type="button" onclick="addValue()">Increment Number</button>
+  <button type="button" onclick="addParagraph()">Add number to bottom of page</button>
+
+  <script>
+    function alertValue() {
+      alert(document.getElementById("number").innerHTML);
+    }
+
+    function addValue() {
+      var x = parseInt(document.getElementById("number").innerHTML)
+      x = x + 1;
+      document.getElementById("number").innerHTML = x;
+    }
+
+    function addParagraph() {
+      var par = document.createElement("P");
+      var num = document.createTextNode(document.getElementById("number").innerHTML);
+      par.appendChild(num);
+      document.body.appendChild(par);
+    }
+  </script>
+</body>
+
+</html>
